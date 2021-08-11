@@ -1,45 +1,61 @@
 
-function playGame() {
-    let enterWorld = confirm("Do you want to begin your journey?")
+class Hero {
+    constructor(name) {
+         this.name = name;
+         this.dead = false
+         this.pageLocation = 0
+     }
+}
+const game = {
+    newHero: null,
+}
 
+const endGame = ()=>{
+    alert("GAME OVER!")
+}
+
+const turnPage = ()=>{
+     const page = document.querySelector("#page-0")
+     page.style.display = "none"
+     const img = document.querySelector("#page-1")
+     img.style.display = "block"
+}
+
+const start = ()=>{
+    let enterWorld = confirm("Do you want to begin your journey?")
+    console.log(enterWorld)
 if(enterWorld == true) {
    let firstChoice = prompt("You come across a fork in the road. Which way do you go? Mt. Doom/Jungle of Death?")
 
    if (firstChoice == "Mt. Doom") {
        alert("Now entering Mt. Doom")
+       turnPage();
        
        let doomChoice = prompt("Do you want to climb the mountain alone or use a tour guide? alone/guide")
        
        if (doomChoice == "alone") {
-           alert("You get stuck just as it is getting dark. You freeze to death. GAME OVER!")
-
+           alert("You get stuck just as it is getting dark. You freeze to death. Remember: always ask for help when you need it.")
+            endGame();
 
        }else if(doomChoice == "guide") {
             alert ("Your tour guide is eaten by a bear! Luckily, you are able to find your way back to the lodge.")
-        }
        }
    }
    else if(firstChoice == "Jungle of Death") {
        alert("Now entering the Jungle of Death");
-
-    
    }
+    
 }
 
 else {
     alert("You decided to end life before it even began. Good bye.")
 }
 }
-playGame();
-/*class Hero {
-    constructor(name) {
-         this.name = name;
-         
-     }
- }
+start();
+/*
 
- const game = {
-    newHero: null,
+
+ 
 
     start(name) {
         const inputname=document.getElementById('yourname')
@@ -48,18 +64,7 @@ playGame();
     }
  }
  
-//let enterGame = confirm("Would you like to enter the game of life?")
 
-//if(enterGame == true) 
-//We are faced with our first choice.
-  // prompt("Which do you choose? Mount Doom or the Jungle of Death?")
-    if (choice === "Mount Doom") {
-        scaleMountDoom();
-    } else if (choice === "Jungle of Death") {
-       enterJungleOfDeath();
-
-
-//let form = document.getElementById
-
-    }
-    */
+}
+let form = document.getElementById
+*/
