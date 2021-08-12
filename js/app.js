@@ -25,11 +25,24 @@ const endGame = ()=>{
 }
 
 const turnPage = ()=>{
-     const page = document.querySelector("#page-0")
-     page.style.display = "block"
-     const img = document.querySelector("#page-1")
-     img.style.display = "none"
-
+     const pageZero = document.querySelector("#page-0")
+     pageZero.style.display = "block"
+     const pageOne = document.querySelector("#page-1")
+     pageOne.style.display = "none"
+     const pageTwo = document.querySelector("#page-2")
+     pageTwo.style.display = "none"
+     const pageThree = document.querySelector("#page-3")
+     pageThree.style.display = "none"
+     const pageFour = document.querySelector("#page-4")
+     pageFour.style.display = "none"
+     const pageFive = document.querySelector("#page-5")
+     pageFive.style.display = "none"
+     const pageSix = document.querySelector('#page-6')
+     pageSix.style.display= "none"
+     const pageSeven = document.querySelector('#page-7')
+     pageSeven.style.display = "none"
+     const pageEight = document.querySelector('#page-8')
+     pageEight.style.display= "none"
 }
     
 //EVENT LISTENERS
