@@ -1,11 +1,11 @@
 body {
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;  
+    background-image: url(https://imgur.com/aSpV91Y.png)
 }
 
 #page-0 {
-    background-image: url(https://imgur.com/aSpV91Y.png);
+    display: block;
 }
 
 #words {

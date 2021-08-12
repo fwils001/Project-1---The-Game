@@ -1,4 +1,3 @@
-
 class Hero {
     constructor(name) {
          this.name = name;
@@ -8,6 +7,13 @@ class Hero {
 }
 const game = {
     newHero: null,
+
+    start(name) {
+        const inputname=document.getElementById('yourname')
+        const nameDisplay=inputname.value
+        this.newHero=new Hero(name);
+        console.log(name)
+    }
 }
 
 const endGame = ()=>{
@@ -16,13 +22,25 @@ const endGame = ()=>{
 
 const turnPage = ()=>{
      const page = document.querySelector("#page-0")
-     page.style.display = "none"
+     page.style.display = "block"
      const img = document.querySelector("#page-1")
-     img.style.display = "block"
+     img.style.display = "none"
 }
 
-const start = ()=>{
-    let enterWorld = confirm("Do you want to begin your journey?")
+
+//EVENT LISTENERS
+let form = document.getElementById('nameform')
+    form.addEventListener('click', (event) =>{
+let submitName = document.getElementById('yourname').value;
+console.log(document.querySelector('#name'))
+document.querySelector('#name').innerHTML = `${submitName}`
+    game.start(submitName)
+    })
+
+
+
+
+   /* let enterWorld = confirm("Do you want to begin your journey?")
     console.log(enterWorld)
 if(enterWorld == true) {
    let firstChoice = prompt("You come across a fork in the road. Which way do you go? Mt. Doom/Jungle of Death?")
@@ -50,21 +68,4 @@ if(enterWorld == true) {
 else {
     alert("You decided to end life before it even began. Good bye.")
 }
-}
-start();
-/*
-
-
- 
-
-    start(name) {
-        const inputname=document.getElementById('yourname')
-        const nameDisplay=inputname.value
-        this.newHero=new Hero(name);
-    }
- }
- 
-
-}
-let form = document.getElementById
 */
