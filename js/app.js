@@ -8,14 +8,18 @@ class Hero {
 const game = {
     newHero: null,
 
-    start(name) {
+    start: function(name) {
         const inputname=document.getElementById('yourname')
         const nameDisplay=inputname.value
         this.newHero=new Hero(name);
-        console.log(name)
+    },
+
+    pageOne: function() {
+        //remove what's on the page (function remove everything but the background image. Select them and remove them.)
+        const words = document.getElementById("words")
+        words.style.display="none"
     }
 }
-
 const endGame = ()=>{
     alert("GAME OVER!")
 }
@@ -25,18 +29,21 @@ const turnPage = ()=>{
      page.style.display = "block"
      const img = document.querySelector("#page-1")
      img.style.display = "none"
+
 }
-
-
+    
 //EVENT LISTENERS
 let form = document.getElementById('nameform')
     form.addEventListener('click', (event) =>{
 let submitName = document.getElementById('yourname').value;
 console.log(document.querySelector('#name'))
 document.querySelector('#name').innerHTML = `${submitName}`
+    document.querySelector('#name').style.display = "none"
+//Add the value from submit name to the game object
+game.name=document.getElementById("yourname").value
     game.start(submitName)
+    form.style.display = "none"
     })
-
 
 
 
