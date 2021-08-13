@@ -1,7 +1,6 @@
 body {
     display: flex;
-    flex-direction: column;  
-    background-image: url(https://imgur.com/aSpV91Y.png);
+    flex-direction: column;     
 }
 
 #words {
@@ -38,7 +37,6 @@ padding: 20px
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 100px;
-    color: white
 }
 
 #button-choices {
@@ -70,4 +68,17 @@ padding: 20px
         0% { transform: translate(0 ,0px); }
         50% { transform: translate(0, 15px); }
         100%  { transform: translate(0, -0px); }
+}
+
+#mt-doom-question {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px
+}
+
+#button-choices-two {
+    display: none;
+    text-align: center;
+    padding: 50px
 }
