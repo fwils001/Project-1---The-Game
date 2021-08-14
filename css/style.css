@@ -82,3 +82,37 @@ padding: 20px
     text-align: center;
     padding: 50px
 }
+#frozen {
+    display: none;
+    text-align: center
+}
+#mt-doom-frozen {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#bear-attack {
+    display: none
+}
+#next-button {
+    display: none;
+    text-align: center;
+    padding: 50px
+}
+#mt-doom-guide {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px
+}
+#tiger-attack {
+    display: none;
+    text-align: center;
+}
+#tiger-outcome {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

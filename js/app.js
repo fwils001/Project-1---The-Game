@@ -40,8 +40,8 @@ let mtDoom = document.querySelector("#doom")
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
         document.querySelector("#button-choices-two").style.display = "block"
+        document.querySelector("#frozen").style.display="none"
        
-        
     })
 let jungleOfDeath = document.querySelector("#jungle")
     jungleOfDeath.addEventListener("click", (event) =>{
@@ -53,5 +53,39 @@ let jungleOfDeath = document.querySelector("#jungle")
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
         document.querySelector("#button-choices-three").style.display = "block"
+        document.querySelector("#frozen").style.display="none"
     })
-    
+let mtDoomAlone = document.querySelector("#alone")
+    mtDoomAlone.addEventListener("click", (event) =>{
+        event.preventDefault()
+        document.querySelector("#frozen").style.display="block"
+        document.querySelector("#mt-doom").style.display = "none"
+        document.querySelector("#button-choices-two").style.display = "none"
+        document.querySelector("#mt-doom-question").style.display = "none"
+        document.querySelector("#mt-doom-frozen").style.display="block"
+        document.querySelector("#bear-attack").style.display="none"
+    })
+let doomGuide = document.querySelector("#mountain-guide")
+    doomGuide.addEventListener("click", (event) =>{
+        event.preventDefault()
+        document.querySelector("#bear-attack").style.display="block"
+        document.querySelector("#mt-doom").style.display = "none"
+        document.querySelector("#button-choices-two").style.display = "none"
+        document.querySelector("#mt-doom-question").style.display = "none"
+        document.querySelector("#mt-doom-guide").style.display = "block"
+        document.querySelector("#next-button").style.display = "block"
+    })
+let jungleFoot = document.querySelector("#foot")
+    jungleFoot.addEventListener("click", (event) =>{
+        event.preventDefault()
+        document.querySelector("#tiger-attack").style.display="block"
+        document.querySelector("#jungle-of-death").style.display="none"
+        document.querySelector("#jungle-question").style.display = "none"
+        document.querySelector("#button-choices-three").style.display = "none"
+        document.querySelector("#tiger-outcome").style.display = "block"
+    })
+let jungleJeep = document.querySelector("#jungle-guide")
+    jungleJeep.addEventListener("click", (event) =>{
+        event.preventDefault()
+        
+    })
