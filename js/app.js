@@ -87,5 +87,36 @@ let jungleFoot = document.querySelector("#foot")
 let jungleJeep = document.querySelector("#jungle-guide")
     jungleJeep.addEventListener("click", (event) =>{
         event.preventDefault()
-        
+        document.querySelector("#jungle-of-death").style.display="none"
+        document.querySelector("#jungle-question").style.display = "none"
+        document.querySelector("#button-choices-three").style.display = "none"
+        document.querySelector("#proceed-button").style.display = "block"
+        document.querySelector("#monkeys-outcome").style.display = "block"
+        document.querySelector("#monkeys").style.display = "block"
+    })
+let proceedToPartTwo = document.querySelector("#proceed-button")
+    proceedToPartTwo.addEventListener("click", (event) =>{
+        event.preventDefault()
+        document.querySelector("#proceed-button").style.display = "none"
+        document.querySelector("#monkeys-outcome").style.display = "none"
+        document.querySelector("#monkeys").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "block"
+        document.querySelector("#button-choices-four").style.display = "block"
+    })
+let nextToPartTwo = document.querySelector("#next-button")
+    nextToPartTwo.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#next-button").style.display = "none"
+        document.querySelector("#bear-attack").style.display = "none"
+        document.querySelector("#mt-doom-guide").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "block"
+        document.querySelector("#button-choices-four").style.display = "block"
+        document.querySelector("#second-shadow").style.display = "block"
+    })
+let seaOfUncertainty = document.querySelector("#sea-button")
+    seaOfUncertainty.addEventListener("click", (event) =>{
+        event.preventDefault() 
+        document.querySelector("#scary-sea").style.display = "block"
+        document.querySelector("#second-shadow").style.display = "none"
+        document.querySelector("#button-choices-four").style.display = "none"
     })
