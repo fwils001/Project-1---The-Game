@@ -28,6 +28,7 @@ let form = document.querySelector('.form')
         document.querySelector('#name').style.display = "none"
         document.querySelector('#story-question').style.display = "block"
         document.querySelector("#button-choices").style.display = "block"
+        
     })
 let mtDoom = document.querySelector("#doom")
     mtDoom.addEventListener("click", (event) =>{
@@ -39,17 +40,18 @@ let mtDoom = document.querySelector("#doom")
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
         document.querySelector("#button-choices-two").style.display = "block"
+       
         
     })
 let jungleOfDeath = document.querySelector("#jungle")
     jungleOfDeath.addEventListener("click", (event) =>{
         event.preventDefault()
         document.querySelector("#jungle-of-death").style.display = "block"
+        document.querySelector("#jungle-question").style.display = "block"
         document.querySelector("#mt-doom").style.display = "none"
         document.querySelector('#story-question').style.display = "none"
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
-        document.querySelector("#mt-doom-question").style.display = "none"
-        document.querySelector("#button-choices-two").style.display = "none"
+        document.querySelector("#button-choices-three").style.display = "block"
     })
     

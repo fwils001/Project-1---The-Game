@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;     
 }
-
 #words {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,13 +9,11 @@ body {
     justify-content: space-between;
     margin: 10px;
 }
-
 #list {
     display: flex;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
     color:black;
     text-align: center;
@@ -26,39 +23,33 @@ header {
     padding: 100px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 #name {
 text-align: center;
 padding: 20px
 }
-
 #story-question {
     display: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 100px;
 }
-
 #button-choices {
     display: none;
     text-align: center;
-
 }
 #mt-doom {
     display: none
 }
-
 #jungle-of-death {
     display: none
 }
-
 #shadowy {
     display: flex;
     margin-left: auto;
     margin-right: 160px;
     width: 15%;
-    margin-top:25px;
     animation-name: floating;
+    margin-top: -250px;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -69,15 +60,24 @@ padding: 20px
         50% { transform: translate(0, 15px); }
         100%  { transform: translate(0, -0px); }
 }
-
 #mt-doom-question {
     display: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px
 }
-
 #button-choices-two {
+    display: none;
+    text-align: center;
+    padding: 50px
+}
+#jungle-question {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px
+}
+#button-choices-three {
     display: none;
     text-align: center;
     padding: 50px
