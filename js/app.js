@@ -119,4 +119,15 @@ let seaOfUncertainty = document.querySelector("#sea-button")
         document.querySelector("#scary-sea").style.display = "block"
         document.querySelector("#second-shadow").style.display = "none"
         document.querySelector("#button-choices-four").style.display = "none"
+        document.querySelector("#sea-question").style.display = "block"
+        document.querySelector("#button-choices-five").style.display = "block"
+    })
+let seaYacht = document.querySelector("#yacht-button")
+    seaYacht.addEventListener("click", (event) =>{
+    event.preventDefault() 
+    document.querySelector("#scary-sea").style.display = "none"
+    document.querySelector("#button-choices-five").style.display = "none"
+    document.querySelector("#shark-attack").style.display= "block"
+    document.querySelector("#yacht-outcome").style.display= "block"
+    document.querySelector("#sea-question").style.display= "none"
     })
