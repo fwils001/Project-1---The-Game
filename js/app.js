@@ -131,3 +131,13 @@ let seaYacht = document.querySelector("#yacht-button")
     document.querySelector("#yacht-outcome").style.display= "block"
     document.querySelector("#sea-question").style.display= "none"
     })
+let fishingBoat = document.querySelector("#fishing-button")
+    fishingBoat.addEventListener("click", (event) =>{
+    event.preventDefault() 
+    document.querySelector("#fishing-outcome").style.display= "block"
+    document.querySelector("#scary-sea").style.display = "none"
+    document.querySelector("#button-choices-five").style.display = "none"
+    document.querySelector("#sea-question").style.display= "none"
+    document.querySelector("#bass").style.display= "block"
+    document.querySelector("#continue-button").style.display= "block"
+    })
