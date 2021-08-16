@@ -155,11 +155,39 @@ let forgottenCastle = document.querySelector("#castle-button")
 let ghostOutcome = document.querySelector("#go-around")
     ghostOutcome.addEventListener("click", (event) =>{
     event.preventDefault() 
-    document.querySelector("#ghost-outcome").style.display = "block"
-    document.querySelector("#ghosts").style.display = "block"
-    document.querySelector("#castle").style.display = "none"
-    document.querySelector("#forgotten-castle").style.display = "none"
-    document.querySelector("#castle-question").style.display = "none"
-    document.querySelector("#button-choices-six").style.display = "none"
-   
+        document.querySelector("#ghost-outcome").style.display = "block"
+        document.querySelector("#ghosts").style.display = "block"
+        document.querySelector("#castle").style.display = "none"
+        document.querySelector("#forgotten-castle").style.display = "none"
+        document.querySelector("#castle-question").style.display = "none"
+        document.querySelector("#button-choices-six").style.display = "none"
+    })
+let nextToPartThree = document.querySelector("#continue-button")
+    nextToPartThree.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#continue-button").style.display = "none"
+        document.querySelector("#bass").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "block"
+        document.querySelector("#button-choices-seven").style.display = "block"
+        document.querySelector("#fishing-outcome").style.display = "none"
+    })
+let devilPact = document.querySelector("#devil")
+    devilPact.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#button-choices-seven").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "none"
+        document.querySelector("#devil-pic").style.display = "block"
+        document.querySelector("#devil-question").style.display = "block"
+        document.querySelector("#button-choices-eight").style.display = "block"
+    })
+let treasureOutcome = document.querySelector("#enter")
+    treasureOutcome.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#treasure-chest").style.display = "block"
+        document.querySelector("#treasure-outcome").style.display = "block"
+        document.querySelector("#please-proceed-button").style.display = "block"
+        document.querySelector("#button-choices-six").style.display = "none"
+        document.querySelector("#castle").style.display = "none"
+        document.querySelector("#castle-question").style.display = "none"
+        
     })
