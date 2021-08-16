@@ -124,20 +124,42 @@ let seaOfUncertainty = document.querySelector("#sea-button")
     })
 let seaYacht = document.querySelector("#yacht-button")
     seaYacht.addEventListener("click", (event) =>{
-    event.preventDefault() 
-    document.querySelector("#scary-sea").style.display = "none"
-    document.querySelector("#button-choices-five").style.display = "none"
-    document.querySelector("#shark-attack").style.display= "block"
-    document.querySelector("#yacht-outcome").style.display= "block"
-    document.querySelector("#sea-question").style.display= "none"
+        event.preventDefault() 
+        document.querySelector("#scary-sea").style.display = "none"
+        document.querySelector("#button-choices-five").style.display = "none"
+        document.querySelector("#shark-attack").style.display= "block"
+        document.querySelector("#yacht-outcome").style.display= "block"
+        document.querySelector("#sea-question").style.display= "none"
     })
 let fishingBoat = document.querySelector("#fishing-button")
     fishingBoat.addEventListener("click", (event) =>{
     event.preventDefault() 
-    document.querySelector("#fishing-outcome").style.display= "block"
-    document.querySelector("#scary-sea").style.display = "none"
-    document.querySelector("#button-choices-five").style.display = "none"
-    document.querySelector("#sea-question").style.display= "none"
-    document.querySelector("#bass").style.display= "block"
-    document.querySelector("#continue-button").style.display= "block"
+        document.querySelector("#fishing-outcome").style.display= "block"
+        document.querySelector("#scary-sea").style.display = "none"
+        document.querySelector("#button-choices-five").style.display = "none"
+        document.querySelector("#sea-question").style.display= "none"
+        document.querySelector("#bass").style.display= "block"
+        document.querySelector("#continue-button").style.display= "block"
+    })
+let forgottenCastle = document.querySelector("#castle-button")
+    forgottenCastle.addEventListener("click", (event) =>{
+        event.preventDefault() 
+        document.querySelector("#castle").style.display = "block"
+        document.querySelector("#scary-sea").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "none"
+        document.querySelector("#forgotten-castle").style.display = "block"
+        document.querySelector("#castle-question").style.display = "block"
+        document.querySelector("#button-choices-six").style.display = "block"
+        document.querySelector("#button-choices-four").style.display = "none"
+    })
+let ghostOutcome = document.querySelector("#go-around")
+    ghostOutcome.addEventListener("click", (event) =>{
+    event.preventDefault() 
+    document.querySelector("#ghost-outcome").style.display = "block"
+    document.querySelector("#ghosts").style.display = "block"
+    document.querySelector("#castle").style.display = "none"
+    document.querySelector("#forgotten-castle").style.display = "none"
+    document.querySelector("#castle-question").style.display = "none"
+    document.querySelector("#button-choices-six").style.display = "none"
+   
     })
