@@ -30,6 +30,12 @@ header {
     text-align: center;
     padding: 20px
 }
+#metrics {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1200px;
+    margin-top: 10px
+ }
+
 #story-question {
     display: none;
     text-align: center;
@@ -332,7 +338,7 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px
+    margin-top: 50px
 }
 #treasure-outcome {
     display: none;
@@ -347,4 +353,66 @@ header {
     display: none;
     text-align: center;
     margin-bottom: 200px
+}
+#princess-pic {
+    display:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px
+}
+#princess-question {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#princess-button-choices {
+    display: none;
+    text-align: center;
+    padding: 20px
+}
+#drunk-pic {
+    display:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px
+}
+#marry-princess-outcome {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    margin-bottom: 20px
+}
+#love-pic {
+    display:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+#dump-outcome {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    margin-bottom: 20px
+}
+#keep-going {
+    display: none;
+    text-align: center;
+    margin-bottom: 200px
+}
+#button-choices-nine {
+    display: none;
+    text-align: center;
+    padding: 30px
 }

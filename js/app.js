@@ -3,7 +3,8 @@ class Hero {
          this.name = name;
          this.dead = false
          this.pageLocation = 0
-     }
+         this.wisdom = 0
+     }     
 }
 const game = {
     newHero: "",
@@ -14,8 +15,8 @@ const game = {
         console.log(nameDisplay)
         this.newHero=new Hero(name);
     },
-   
-}
+   }
+
 //EVENT LISTENERS
 let form = document.querySelector('.form')
     form.addEventListener('submit', (event) =>{
@@ -28,7 +29,6 @@ let form = document.querySelector('.form')
         document.querySelector('#name').style.display = "none"
         document.querySelector('#story-question').style.display = "block"
         document.querySelector("#button-choices").style.display = "block"
-        
     })
 let mtDoom = document.querySelector("#doom")
     mtDoom.addEventListener("click", (event) =>{
@@ -40,8 +40,7 @@ let mtDoom = document.querySelector("#doom")
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
         document.querySelector("#button-choices-two").style.display = "block"
-        document.querySelector("#frozen").style.display="none"
-       
+        document.querySelector("#frozen").style.display= "none"
     })
 let jungleOfDeath = document.querySelector("#jungle")
     jungleOfDeath.addEventListener("click", (event) =>{
@@ -64,6 +63,7 @@ let mtDoomAlone = document.querySelector("#alone")
         document.querySelector("#mt-doom-question").style.display = "none"
         document.querySelector("#mt-doom-frozen").style.display="block"
         document.querySelector("#bear-attack").style.display="none"
+        console.log(thid.game.getWise())
     })
 let doomGuide = document.querySelector("#mountain-guide")
     doomGuide.addEventListener("click", (event) =>{
@@ -189,5 +189,51 @@ let treasureOutcome = document.querySelector("#enter")
         document.querySelector("#button-choices-six").style.display = "none"
         document.querySelector("#castle").style.display = "none"
         document.querySelector("#castle-question").style.display = "none"
-        
     })
+let proceedToPartThree = document.querySelector("#please-proceed-button")
+    proceedToPartThree.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#treasure-chest").style.display = "none"
+        document.querySelector("#treasure-outcome").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "block"
+        document.querySelector("#button-choices-seven").style.display = "block"
+        document.querySelector("#please-proceed-button").style.display = "none"
+    })
+let princessChoice = document.querySelector("#princess-button")
+    princessChoice.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#button-choices-seven").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "none"
+        document.querySelector("#princess-pic").style.display = "block"
+        document.querySelector("#princess-question").style.display = "block"
+        document.querySelector("#princess-button-choices").style.display = "block"
+    })
+let marryPrincess = document.querySelector("#marry")
+    marryPrincess.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#princess-button-choices").style.display = "none"
+        document.querySelector("#princess-pic").style.display = "none"
+        document.querySelector("#marry-princess-outcome").style.display = "block"
+        document.querySelector("#drunk-pic").style.display = "block"
+        document.querySelector("#princess-question").style.display = "none"
+    })
+let dumpPrincess = document.querySelector("#dump")
+    dumpPrincess.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#princess-button-choices").style.display = "none"
+        document.querySelector("#princess-pic").style.display = "none"
+        document.querySelector("#princess-question").style.display = "none"
+        document.querySelector("#love-pic").style.display = "block"
+        document.querySelector("#dump-outcome").style.display = "block"
+        document.querySelector("#keep-going").style.display = "block"
+    })
+let nextToPartFour = document.querySelector("#keep-going")
+    dumpPrincess.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#love-pic").style.display = "none"
+        document.querySelector("#dump-outcome").style.display = "none"
+        document.querySelector("#keep-going").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "block"
+        document.querySelector("#button-choices-nine").style.display = "block"
+    })
+        
