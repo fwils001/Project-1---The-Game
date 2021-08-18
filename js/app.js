@@ -2,10 +2,14 @@ class Hero {
     constructor(name) {
          this.name = name;
          this.dead = false
-         this.pageLocation = 0
          this.wisdom = 0
      }     
+    // getWise() {
+      //  if (document.querySelector("#mt-doom-frozen").style.display="block")
+        //this.wisdom++
+        //document.querySelector("#wisdom").innerHTML = `${this.wisdom}`
 }
+
 const game = {
     newHero: "",
 
@@ -15,8 +19,7 @@ const game = {
         console.log(nameDisplay)
         this.newHero=new Hero(name);
     },
-   }
-
+    }
 //EVENT LISTENERS
 let form = document.querySelector('.form')
     form.addEventListener('submit', (event) =>{
@@ -63,7 +66,7 @@ let mtDoomAlone = document.querySelector("#alone")
         document.querySelector("#mt-doom-question").style.display = "none"
         document.querySelector("#mt-doom-frozen").style.display="block"
         document.querySelector("#bear-attack").style.display="none"
-        console.log(thid.game.getWise())
+        
     })
 let doomGuide = document.querySelector("#mountain-guide")
     doomGuide.addEventListener("click", (event) =>{
@@ -236,4 +239,32 @@ let nextToPartFour = document.querySelector("#keep-going")
         document.querySelector("#second-shadow").style.display = "block"
         document.querySelector("#button-choices-nine").style.display = "block"
     })
-        
+let sellSoul = document.querySelector("#sell-soul")
+    sellSoul.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#soul").style.display = "block"
+        document.querySelector("#button-choices-eight").style.display = "none"
+        document.querySelector("#devil-question").style.display = "none"
+        document.querySelector("#devil-pic").style.display = "none"
+        document.querySelector("#sell-soul-outcome").style.display = "block"
+        document.querySelector("#almost-there").style.display = "block"
+    })
+let goToPartFour = document.querySelector("#almost-there")
+    goToPartFour.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#button-choices-nine").style.display = "block"
+        document.querySelector("#second-shadow").style.display = "block"
+        document.querySelector("#soul").style.display = "none"
+        document.querySelector("#sell-soul-outcome").style.display = "none"
+        document.querySelector("#almost-there").style.display = "none"
+    })
+let backOut = document.querySelector("#back-out")
+    backOut.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#back-out").style.display = "none"
+        document.querySelector("#heart-attack").style.display = "block"
+        document.querySelector("#devil-pic").style.display = "none"
+        document.querySelector("#heart-attack-outcome").style.display = "block"
+        document.querySelector("#devil-question").style.display = "none"
+        document.querySelector("#button-choices-eight").style.display = "none"
+    })
