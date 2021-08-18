@@ -1,3 +1,5 @@
+let newHero
+
 class Hero {
     constructor(name) {
          this.name = name;
@@ -5,19 +7,19 @@ class Hero {
          this.wisdom = 0
      }     
     getWise() {
-        console.log("get wise")
-        this.wisdom++
-        document.querySelector("#wisdom").innerHTML = `${this.wisdom}`
+            this.wisdom++
+            document.querySelector("#wisdom").innerHTML = `${this.wisdom}`
+        }
 }
-}
-const game = {
-    newHero: "",
 
-    start(name) {
+const game = {
+   
+    start() {
         const inputname=document.getElementById('yourname')
         const nameDisplay=inputname.value
         console.log(nameDisplay)
-        this.newHero=new Hero(name);
+        newHero=new Hero(nameDisplay);
+        console.log(newHero)
     },
     }
 //EVENT LISTENERS
@@ -25,6 +27,7 @@ let form = document.querySelector('.form')
     form.addEventListener('submit', (event) =>{
         event.preventDefault()
         const userInput = document.querySelector("#yourname")
+        game.start()
         console.log(userInput.value)
         document.querySelector("#header").style.display = "none"
         document.querySelector("#words").style.display = "none"
@@ -38,24 +41,20 @@ let mtDoom = document.querySelector("#doom")
         event.preventDefault()
         document.querySelector("#mt-doom").style.display = "block"
         document.querySelector("#mt-doom-question").style.display = "block"
-        document.querySelector("#jungle-of-death").style.display = "none"
         document.querySelector('#story-question').style.display = "none"
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
         document.querySelector("#button-choices-two").style.display = "block"
-        document.querySelector("#frozen").style.display= "none"
     })
 let jungleOfDeath = document.querySelector("#jungle")
     jungleOfDeath.addEventListener("click", (event) =>{
         event.preventDefault()
         document.querySelector("#jungle-of-death").style.display = "block"
         document.querySelector("#jungle-question").style.display = "block"
-        document.querySelector("#mt-doom").style.display = "none"
         document.querySelector('#story-question').style.display = "none"
         document.querySelector("#button-choices").style.display = "none"
         document.querySelector("#shadowy").style.display = "none"
         document.querySelector("#button-choices-three").style.display = "block"
-        document.querySelector("#frozen").style.display="none"
     })
 let mtDoomAlone = document.querySelector("#alone")
     mtDoomAlone.addEventListener("click", (event) =>{
@@ -76,6 +75,7 @@ let doomGuide = document.querySelector("#mountain-guide")
         document.querySelector("#mt-doom-question").style.display = "none"
         document.querySelector("#mt-doom-guide").style.display = "block"
         document.querySelector("#next-button").style.display = "block"
+        newHero.getWise()
     })
 let jungleFoot = document.querySelector("#foot")
     jungleFoot.addEventListener("click", (event) =>{
@@ -95,6 +95,7 @@ let jungleJeep = document.querySelector("#jungle-guide")
         document.querySelector("#proceed-button").style.display = "block"
         document.querySelector("#monkeys-outcome").style.display = "block"
         document.querySelector("#monkeys").style.display = "block"
+        newHero.getWise()
     })
 let proceedToPartTwo = document.querySelector("#proceed-button")
     proceedToPartTwo.addEventListener("click", (event) =>{
@@ -142,6 +143,7 @@ let fishingBoat = document.querySelector("#fishing-button")
         document.querySelector("#sea-question").style.display= "none"
         document.querySelector("#bass").style.display= "block"
         document.querySelector("#continue-button").style.display= "block"
+        newHero.getWise()
     })
 let forgottenCastle = document.querySelector("#castle-button")
     forgottenCastle.addEventListener("click", (event) =>{
@@ -191,6 +193,7 @@ let treasureOutcome = document.querySelector("#enter")
         document.querySelector("#button-choices-six").style.display = "none"
         document.querySelector("#castle").style.display = "none"
         document.querySelector("#castle-question").style.display = "none"
+        newHero.getWise()
     })
 let proceedToPartThree = document.querySelector("#please-proceed-button")
     proceedToPartThree.addEventListener("click", (event) =>{
@@ -228,6 +231,7 @@ let dumpPrincess = document.querySelector("#dump")
         document.querySelector("#love-pic").style.display = "block"
         document.querySelector("#dump-outcome").style.display = "block"
         document.querySelector("#keep-going").style.display = "block"
+        newHero.getWise()
     })
 let nextToPartFour = document.querySelector("#keep-going")
     dumpPrincess.addEventListener("click", (event) =>{
@@ -247,6 +251,7 @@ let sellSoul = document.querySelector("#sell-soul")
         document.querySelector("#devil-pic").style.display = "none"
         document.querySelector("#sell-soul-outcome").style.display = "block"
         document.querySelector("#almost-there").style.display = "block"
+        newHero.getWise()
     })
 let goToPartFour = document.querySelector("#almost-there")
     goToPartFour.addEventListener("click", (event) =>{
@@ -290,6 +295,7 @@ let studyKant = document.querySelector("#kant")
         document.querySelector("#kant-sartre").style.display = "none"
         document.querySelector("#kant-quote").style.display = "block"
         document.querySelector("#kant-outcome").style.display = "block"
+        newHero.getWise()
     })
 let softWareEngineer = document.querySelector("#software-engineer")
     softWareEngineer.addEventListener("click", (event) =>{
@@ -298,6 +304,7 @@ let softWareEngineer = document.querySelector("#software-engineer")
         document.querySelector("#second-shadow").style.display = "none"
         document.querySelector("#general-outcome").style.display = "block"
         document.querySelector("#loop").style.display = "block"
+        newHero.getWise()
     })
 
 
