@@ -4,12 +4,12 @@ class Hero {
          this.dead = false
          this.wisdom = 0
      }     
-    // getWise() {
-      //  if (document.querySelector("#mt-doom-frozen").style.display="block")
-        //this.wisdom++
-        //document.querySelector("#wisdom").innerHTML = `${this.wisdom}`
+    getWise() {
+        console.log("get wise")
+        this.wisdom++
+        document.querySelector("#wisdom").innerHTML = `${this.wisdom}`
 }
-
+}
 const game = {
     newHero: "",
 
@@ -65,8 +65,7 @@ let mtDoomAlone = document.querySelector("#alone")
         document.querySelector("#button-choices-two").style.display = "none"
         document.querySelector("#mt-doom-question").style.display = "none"
         document.querySelector("#mt-doom-frozen").style.display="block"
-        document.querySelector("#bear-attack").style.display="none"
-        
+        document.querySelector("#bear-attack").style.display="none" 
     })
 let doomGuide = document.querySelector("#mountain-guide")
     doomGuide.addEventListener("click", (event) =>{
