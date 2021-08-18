@@ -267,3 +267,44 @@ let backOut = document.querySelector("#back-out")
         document.querySelector("#devil-question").style.display = "none"
         document.querySelector("#button-choices-eight").style.display = "none"
     })
+let studyPhilosophy = document.querySelector("#philosophy")
+    studyPhilosophy.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#button-choices-nine").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "none"
+        document.querySelector("#philosophy-books").style.display = "block"
+        document.querySelector("#kant-sartre").style.display = "block"
+    })
+let studySartre = document.querySelector("#sartre")
+    studySartre.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#philosophy-books").style.display = "none"
+        document.querySelector("#kant-sartre").style.display = "none"
+        document.querySelector("#sartre-quote").style.display = "block"
+        document.querySelector("#sartre-outcome").style.display = "block"
+    })
+let studyKant = document.querySelector("#kant")
+    studyKant.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#philosophy-books").style.display = "none"
+        document.querySelector("#kant-sartre").style.display = "none"
+        document.querySelector("#kant-quote").style.display = "block"
+        document.querySelector("#kant-outcome").style.display = "block"
+    })
+let softWareEngineer = document.querySelector("#software-engineer")
+    softWareEngineer.addEventListener("click", (event) =>{
+    event.preventDefault()
+        document.querySelector("#button-choices-nine").style.display = "none"
+        document.querySelector("#second-shadow").style.display = "none"
+        document.querySelector("#general-outcome").style.display = "block"
+        document.querySelector("#loop").style.display = "block"
+    })
+
+
+
+
+
+        
+
+
+         

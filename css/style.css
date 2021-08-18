@@ -468,3 +468,63 @@ header {
     margin-top: 30px;
     margin-bottom: 20px
 }
+#philosophy-books {
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+#kant-sartre {
+    display: none;
+    text-align: center;
+    margin-bottom: 50px
+}
+#sartre-outcome {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+#sartre-quote {
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+#kant-outcome {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+#kant-quote {
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+#general-outcome{
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+#loop{
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
