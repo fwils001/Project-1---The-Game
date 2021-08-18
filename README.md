@@ -12,19 +12,19 @@ Please see wireframes below to view all 4 parts:
 <img width="940" alt="paths part 2" src="https://user-images.githubusercontent.com/25629429/129812004-e28cc1e2-2a88-409b-9a67-1adfa04f4518.png">
 <img width="972" alt="paths part 3" src="https://user-images.githubusercontent.com/25629429/129812018-bb322b81-d4a4-437f-ba57-a35ebffb5906.png">
 <img width="997" alt="paths part 4" src="https://user-images.githubusercontent.com/25629429/129812037-1b1932ae-376c-490a-82ed-be3729ccefe6.png">
-___________________________________
+____________________________________
 
 User Stories
 
 As a player, I want to use my own mental resources to make objective decisions in life because this will give me a sense of pride.
 
-As a player, I want to be sure that every decision I make is based on correct intuition--give my knowledge at that time --so that I feel a sense of control.
+As a player, I want to be sure that every decision I make is based on correct intuition--give my knowledge at that time--so that I feel a sense of control.
 
 As a player, I want to be able to spot reg flags from a mile away so that I can feel a sense of agency.
 
 ___________________________________
 
-My MVP goals were to: create a logical story tree that can be replicated programmatically, provide multiple background images and animations, and to give the player wisdom points for correct choices.
+My MVP goals were to: create a logical story tree that could be replicated programmatically, provide multiple background images and animations, and to give the player wisdom points for correct choices.
 
 My stretch goal was to avoid using too many "alerts" or "prompts" as they are annoying to the user. I achieved this goal as well.
 
